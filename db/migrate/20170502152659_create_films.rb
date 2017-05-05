@@ -2,7 +2,7 @@ class CreateFilms < ActiveRecord::Migration[5.0]
   def change
     create_table :films do |t|
       t.string :title
-      t.string :episode_id
+      t.integer :episode_id
       t.string :director
       t.string :characters
       t.timestamps
